@@ -1,7 +1,7 @@
 def main(s):
     dic = { "I":1, "V":5, "X":10, "L":50, "C":100, "D":500, "M":1000 }
     n = len(s)
-    sum, i = 0
+    sum, i = 0, 0
     while i < n:
         if i < n-1 and s[i] == "I" and s[i+1] == 'V':
             sum += 4
