@@ -16,8 +16,6 @@ class Solution(object):
             return True
         if not p or not q or p.val != q.val:
             return False
-        
-        print("call")
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
 # 테스트 케이스들
