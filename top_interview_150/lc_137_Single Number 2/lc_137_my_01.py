@@ -1,4 +1,17 @@
+from collections import defaultdict
+
 class Solution(object):
+    def singleNumberHash(self, nums):
+        dic = defaultdict(int)
+
+        for num in nums:
+            dic[num] += 1
+        for k, v in dic.items():
+            if v == 1:
+                return k
+
+        return -1
+
     def singleNumber(self, nums):
         """
         :type nums: List[int]
