@@ -13,8 +13,6 @@ class Solution(object):
         if not head:
             return None
         
-        # dummy / prev -> (head) 1 -> 2 -> 3 -> 3 -> 4 -> 4-> 5
-
         dummy = ListNode(-1, head)
         prev = dummy
 
