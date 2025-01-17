@@ -2,7 +2,7 @@
  - Time Complexity: O(n)
  - Space Complexity: O(1)
  - Algorithm: two pointers
- - Note: Need to memory basic string functions such as isalnum() and lower().
+ - Note: Need to check basic string functions such as isalnum() and lower().
 """
 class Solution:
     def isPalindrome(self, s: str) -> bool:
