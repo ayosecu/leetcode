@@ -1,3 +1,10 @@
+"""
+    - Time Complexity: O(m + n)
+    - Space Complexity: O(1)
+    - Note
+        - Need to update from the right side (Decreasing Ordered)
+        - If nums1 list updated from left, re-ordering would be required.
+"""
 from typing import List
 
 class Solution:
@@ -5,7 +12,7 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        # Using 3 pointers and copy values from the right (Decrease Odered)
+        # Using 3 pointers and copy values from the right (Decrease Ordered)
         p1, p2, p3 = m - 1, n - 1, m + n - 1
 
         while p1 >= 0 and p2 >= 0:
