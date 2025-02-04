@@ -1,30 +1,36 @@
-class Solution(object):
-    def letterCombinations(self, digits):
-        """
-        :type digits: str
-        :rtype: List[str]
-        """
-        if not digits:
-            return []
+from typing import List
 
-        phone_map = {
-                        "2":"abc", "3":"def", "4":"ghi",
-                        "5":"jkl", "6":"mno", "7":"pqrs",
-                        "8":"tuv", "9":"wxyz" 
-                    }
+class Solution:
+    """
+        - Time Complexity: O(4^d * d), d = len(digits)
+        - Space Complexity: O(4^d * d), d = len(digits)
+        - Note
+            - need to path.pop() after backtrack
+    """
+    def letterCombinations(self, digits: str) -> List[str]:
         result = []
 
-        def backtrack(index, path):
+        if len(digits) == 0:
+            return result
+        
+        map = { "2":"abc", "3":"def", "4":"ghi",
+                "5":"jkl", "6":"mno", "7":"pqrs",
+                "8":"tuv", "9":"wxyz" }
+        
+        def backtrack(path, index):
             if len(path) == len(digits):
                 result.append("".join(path))
                 return
-            str = phone_map[digits[index]]
+            
+            str = map[digits[index]]
+
             for c in str:
                 path.append(c)
-                backtrack(index + 1, path)
+                backtrack(path, index + 1)
                 path.pop()
-                
-        backtrack(0, [])
+
+        backtrack([], 0)
+
         return result
 
 def run_tests():
