@@ -1,0 +1,2 @@
+[2025-02-12 10:15:23] TXN123 Failed login attempt from 192.168.1.1
+[2025-02-12 10:16:10] TXN456 User accessed restricted file
