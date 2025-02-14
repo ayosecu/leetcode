@@ -41,7 +41,7 @@ class Solution(object):
         lines = f.readlines()
 
         for line in lines:
-            parsed = re.search(r"\[(.*?)\] (\S+) (.*)", line)
+            parsed = re.search(r"\[(.*)\] (\S+) (.*)", line)
             time = parsed.group(1)
             id = parsed.group(2)
             log = parsed.group(3)
