@@ -1,0 +1,26 @@
+[
+    {
+        "timestamp": "2024-02-01T12:34:56Z",
+        "source_ip": "192.168.1.100",
+        "destination_ip": "8.8.8.8",
+        "file_hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "url": "https://malicious.com",
+        "event_type": "malware_detected"
+    },
+    {
+        "timestamp": "2024-02-01T12:35:10Z",
+        "source_ip": "192.168.1.101",
+        "destination_ip": "8.8.4.4",
+        "file_hash": "",
+        "url": "",
+        "event_type": "failed_login"
+    },
+    {
+        "timestamp": "2024-02-01T12:35:20Z",
+        "source_ip": "192.168.1.102",
+        "destination_ip": "8.8.8.8",
+        "file_hash": "a54f8dc1b3548b1b92e1fdd4b6a536b7",
+        "url": "",
+        "event_type": "file_upload"
+    }
+]

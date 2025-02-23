@@ -1,0 +1,4 @@
+timestamp,source_ip,destination_ip,file_hash,url,event_type
+2024-02-01T12:34:56Z,192.168.1.100,8.8.8.8,d41d8cd98f00b204e9800998ecf8427e,https://malicious.com,malware_detected
+2024-02-01T12:35:10Z,192.168.1.101,8.8.4.4,,"",failed_login
+2024-02-01T12:35:20Z,192.168.1.102,8.8.8.8,a54f8dc1b3548b1b92e1fdd4b6a536b7,,file_upload
