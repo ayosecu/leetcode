@@ -1,0 +1,16 @@
+[
+  {
+      "eventTime": "2024-02-04T12:34:56Z",
+      "eventName": "ConsoleLogin",
+      "userIdentity": {"type": "IAMUser", "userName": "alice"},
+      "sourceIPAddress": "192.168.1.10",
+      "errorMessage": "Failed authentication"
+    },
+  {
+      "eventTime": "2024-02-05T12:34:56Z",
+      "eventName": "ConsoleLogin",
+      "userIdentity": {"type": "IAMUser", "userName": "bob"},
+      "sourceIPAddress": "192.168.1.9",
+      "errorMessage": ""
+  }
+]
