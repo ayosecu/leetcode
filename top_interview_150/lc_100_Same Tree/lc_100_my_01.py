@@ -18,35 +18,35 @@ class Solution(object):
             return False
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
-# 테스트 케이스들
+# TC
 def test_isSameTree():
     sol = Solution()
 
-    # Test case 1: 같은 구조와 같은 값을 가지는 트리
+    # Test case 1: Same
     print("test1")
     p = TreeNode(1, TreeNode(2), TreeNode(3))
     q = TreeNode(1, TreeNode(2), TreeNode(3))
     assert sol.isSameTree(p, q) == True, "Test case 1 failed"
     
-    # Test case 2: 다른 구조를 가지는 트리
+    # Test case 2: Different
     print("test2")
     p = TreeNode(1, TreeNode(2))
     q = TreeNode(1, None, TreeNode(2))
     assert sol.isSameTree(p, q) == False, "Test case 2 failed"
     
-    # Test case 3: 같은 구조지만 다른 값을 가지는 트리
+    # Test case 3: Different
     print("test3")
     p = TreeNode(1, TreeNode(2), TreeNode(1))
     q = TreeNode(1, TreeNode(1), TreeNode(2))
     assert sol.isSameTree(p, q) == False, "Test case 3 failed"
     
-    # Test case 4: 둘 다 빈 트리
+    # Test case 4: Empty
     print("test4")    
     p = None
     q = None
     assert sol.isSameTree(p, q) == True, "Test case 4 failed"
 
-    # Test case 5: 다른 구조
+    # Test case 5: Different
     print("test5")    
     p = TreeNode(1, TreeNode(2), TreeNode(3, TreeNode(4), TreeNode(5)))
     q = TreeNode(1, TreeNode(2), TreeNode(3))
@@ -54,5 +54,5 @@ def test_isSameTree():
 
     print("All test cases passed.")
 
-# 테스트 실행
+# Test Execute
 test_isSameTree()
