@@ -31,9 +31,8 @@ class Solution(object):
         self.in_order(root)        
         return self.min_diff
     
-# 테스트 케이스 실행 함수
 def run_test():
-    # 테스트 케이스 1: [4, 2, 6, 1, 3]
+    # TC 1: [4, 2, 6, 1, 3]
     root = TreeNode(4)
     root.left = TreeNode(2)
     root.right = TreeNode(6)
@@ -44,7 +43,7 @@ def run_test():
     result = solution.getMinimumDifference(root)
     print("Test Case 1 - Expected: 1, Result:", result)
 
-    # 테스트 케이스 2: [1, 0, 48, None, None, 12, 49]    
+    # TC 2: [1, 0, 48, None, None, 12, 49]    
     root = TreeNode(1)
     root.left = TreeNode(0)
     root.right = TreeNode(48)
@@ -55,7 +54,7 @@ def run_test():
     result = solution.getMinimumDifference(root)
     print("Test Case 2 - Expected: 1, Result:", result)
 
-    # 테스트 케이스 3: [236, 104, 701, None, 227, None, 911]
+    # TC 3: [236, 104, 701, None, 227, None, 911]
     root = TreeNode(236)
     root.left = TreeNode(104)
     root.right = TreeNode(701)
@@ -66,5 +65,4 @@ def run_test():
     result = solution.getMinimumDifference(root)
     print("Test Case 3 - Expected: 9, Result:", result)
 
-# 테스트 케이스 실행
 run_test()
